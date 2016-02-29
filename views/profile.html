@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Profile</title>
+</head>
+<body>
+  <div>
+      <h3>Welcome</h3>
+      <%= username %>
+      <table>
+          <thead>
+          <tr>
+              <td>AccountNo</td>
+              <td>Balance</td>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+              <td><%= AccountNo %></td>
+              <td><%= Balance %></td>
+          </tr>
+          </tbody>
+      </table>
+  </div>
+  <div>
+      <a href="./deposit/<%= AccountNo %>">Deposit</a>
+      <a href="./Withdraw/<%= AccountNo %>">WithDraw</a>
+  </div>
+</body>
+</html>
